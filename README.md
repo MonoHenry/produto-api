@@ -6,8 +6,9 @@ Projeto de desenvolvimento para gerencimento de produtos com a criação de um b
 - npm
 - Docker
 - PostgreSQL
+```
 NOTE: Caso você deseje testar os métodos PUT/POST/DELETE, será necessário uma ClientAPI, no meu caso, estou usando atac.
-
+```
 # Instruções de instalação
 
 1. Clone o repositório
