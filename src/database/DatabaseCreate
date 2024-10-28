@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS produto(
+   id SERIAL PRIMARY KEY,
+   descricao VARCHAR(100),
+   preco MONEY,
+   estoque INTEGER,
+   data DATE
+);
