@@ -21,22 +21,22 @@ cd produto-api/
 ```
 
 3. Crie um arquivo .env e coloque as seguintes informações:
-```cpp
-   PGUSER=$(SEU_USUARIO)
-   PGHOST=127.0.0.1
-   PGDATABASE=banco
-   PGPASSWORD=$(SUA_SENHA)
-   PGPORT=5433
+```
+PGUSER=$(SEU_USUARIO)
+PGHOST=127.0.0.1
+PGDATABASE=banco
+PGPASSWORD=$(SUA_SENHA)
+PGPORT=5433
 ```
 
 4. Baixe as dependências do Node.js
 ```bash
-   npm i
+npm i
 ```
 
 5. Rode o servidor
 ```bash
-   npm run dev
+npm run dev
 ```
 
 # Teste de funcionalidade
@@ -87,11 +87,11 @@ http://localhost:12345/produtos
 ```
 Em seguida, cria-se um JSON contendo as informações:
 ```
-   {
-      "descricao" : "$(A_DESCRICAO_DE_SUA_PREFERENCIA)",
-      "preco"     " PRECO_DO_PRODUTO,
-      "estoque"   : QUANTIDADE_DE_PRODUTOS
-   }
+{
+   "descricao" : "$(A_DESCRICAO_DE_SUA_PREFERENCIA)",
+   "preco"     " PRECO_DO_PRODUTO,
+   "estoque"   : QUANTIDADE_DE_PRODUTOS
+}
 ```
 
 Depois é necessário fazer a requisição.
