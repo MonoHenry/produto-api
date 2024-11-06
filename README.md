@@ -23,10 +23,10 @@ cd produto-api/
 
 3. Crie um arquivo .env e coloque as seguintes informações:
 ```
-PGUSER=$(SEU_USUARIO)
+PGUSER=admin
 PGHOST=127.0.0.1
 PGDATABASE=banco
-PGPASSWORD=$(SUA_SENHA)
+PGPASSWORD=admin
 PGPORT=5433
 ```
 
