@@ -3,11 +3,12 @@ const router = express.Router();
 const pool = require("../db");
 //ACHO QUE TA FUNCIONANDO
 router.post("/produtos", async (req, res) => {
-   const { descricao, preco, quantidade } = req.body;
+   const { descricao, preco, estoque, data } = req.body;
    try {
+      console.log;
       const result = await pool.query(
-         "INSERT INTO produto (descricao, preco, estoque) VALUES ($1, $2, $3) RETURNING *",
-         [descricao, preco, quantidade],
+         "INSERT INTO produto (descricao, preco, estoque, data) VALUES ($1, $2, $3, $4) RETURNING *",
+         [descricao, preco, estoque, data],
       );
       res.status(201).json(result.rows[0]);
    } catch (error) {

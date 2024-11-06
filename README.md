@@ -35,7 +35,12 @@ PGPORT=5433
 npm i
 ```
 
-5. Rode o servidor
+5. Rode o docker
+```
+docker-compose up -d
+```
+
+6. Rode o servidor
 ```bash
 npm run dev
 ```
