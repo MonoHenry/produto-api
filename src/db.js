@@ -54,8 +54,8 @@ const runSingleScript = async (filepath) => {
 
 const runScripts = async () => {
    await createDatabase();
-   await runSingleScript("database/DatabaseCreate");
-   await runSingleScript("database/DatabasePovoate");
+   await runSingleScript("/database/DatabaseCreate");
+   await runSingleScript("/database/DatabasePovoate");
 };
 
 runScripts();
